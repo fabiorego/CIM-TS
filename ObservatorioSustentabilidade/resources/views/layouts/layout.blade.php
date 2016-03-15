@@ -32,8 +32,16 @@
                         <div class="col-sm-6">
                             <div class="contactinfo">
                                 <ul class="nav nav-pills">
-                                    <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>
+                                     <li>
+                                        <a href="tel:"><i class="fa fa-phone" data-name="phone" data-size="18" data-loop="true" data-c="#fff" data-hc="#fff"></i></a>
+                                        <label class="hidden-xs"><a href="tel:" class="text-white">(703) 717-4200</a></label>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:"><i class="fa fa-envelope" data-name="mail" data-size="18" data-loop="true" data-c="#fff" data-hc="#fff"></i></a>
+                                        <label class="hidden-xs"><a href="mailto:" class="text-white">info@joshadmin.com</a></label>
+                                    </li>
+                                    {{--<li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i> info@domain.com</a></li>--}}
                                 </ul>
                             </div>
                         </div>
