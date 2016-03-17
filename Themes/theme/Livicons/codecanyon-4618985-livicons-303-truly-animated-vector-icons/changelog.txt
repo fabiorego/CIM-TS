@@ -1,0 +1,48 @@
+/* LivIcons v1.4 | (c) 2013 DeeThemes | livicons.com */
+
+v1.4
+2014, October, 1
+
+- added new 10 animated icons
+- small bug fixes of animation for few icons
+
+v1.3
+2013, July, 23
+
+- added new 9 animated and 18 static icons
+- not needed jQuery method .each() to add, remove or update LivIcons for any class when work via JavaScript
+- script will not add a LivIcon to a container with already existing icon
+- made some code improvement for more accurate behaviour when you have any LivIcon inline in Morph icons
+- updated the documentation
+- updated the Customizer
+- updated Adobe Illustrator files
+
+v1.2
+2013, May, 19
+- added 65 new animated icons
+- added the ability to work with icons dynamically via three new JavaScript methods
+- added support for changing the color for the 'active' class of icons or their parents' elements
+- from now script will not override the IDs which you define for element with class "livicon"
+- made some code improvement for hiding variables from global namespace and preventing SVG rendering bugs in Firefox and IE9
+- updated the documentation
+- updated the Customizer
+- updated Adobe Illustrator files
+
+
+v1.1.1
+2013, May, 05
+- small bug fix for IE6 - IE8
+
+v1.1
+2013, May, 04
+- removed all animations from 'brand names' icons, because these animations may violate terms of service of respective copyright owners
+- removed 'twitter-alt-alt' icon
+- added ten new icons
+- added new 'data-duration' or 'data-d' parameter for changing animation speed
+- updated the documentation
+- updated the Customizer
+- updated Adobe Illustrator files
+
+
+v1.0
+2013, May, 01 - initial release

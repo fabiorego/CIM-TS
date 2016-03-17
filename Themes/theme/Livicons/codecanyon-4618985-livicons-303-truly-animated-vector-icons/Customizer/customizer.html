@@ -1,0 +1,2809 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LivIcons - Customizer v1.4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="utf-8">
+
+  <meta name=author content=DeeThemes>
+  <meta itemprop=name content=LivIcons>
+  <meta name=description itemprop=description content="This is the customizer for LivIcons - the truly animated vector icons.">
+        
+  <link href="css/bootstrap.min.css" rel="stylesheet" >
+  <link href="css/customizer.css" rel="stylesheet">
+  <link href="css/jquery.minicolors.css" rel="stylesheet">
+  
+  <!--[if lt IE 8]>
+    <script src="js/json2.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- Example of all data attributes
+Full notation:
+<span class="livicon" data-name="livicon" data-size="32" data-color="#Fa45b7" data-hovercolor="#ff00ff" data-animate="true" data-iteration="3" data-duration="600" data-loop="false" data-evetype="hover" data-onparent="false"></span>
+
+Short notation:
+<span class="livicon" data-n="livicon" data-s="32" data-c="#Fa45b7" data-hc="#ff00ff" data-a="true" data-i="3" data-d="600" data-l="false" data-et="hover" data-op="false"></span>
+-->
+
+<div class="container">
+  <h1 class="page-header">LivIcons Customizer v1.4</h1>
+  <div class="row">
+    <div class="span12">
+      <div class="well">
+        <p class="lead">The LivIcons customizer let you choose icon exactly needed for your project and set the default parameters you prefer.</p>
+        <p>Default icons color is set to 'original' in this customizer. Please follow the three simple steps.</p>
+      </div>
+    </div>
+  </div>
+  
+  <h2 class="page-header">Step 1 - Choose the icons</h2>
+  
+  <div class="row">
+    <div class="span2">
+      <p><input type="button" class="btn btn-info btn-block checkbutton" value="check all"></p>
+    </div>
+    <div class="span3">
+      <div class="alert alert-info checkedsummary"></div>
+    </div>
+    <div class="span6">
+      <div class="alert alert-info sizesummary"></div>
+    </div>
+  </div>
+  <div class="row">
+    <form>
+      <div class="span12">
+        <h3 class="page-header">New in v1.4</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="at"></div>
+          <input class="checkbox" data-size="693" type="checkbox" value="at"> at
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="balloons"></div>
+          <input class="checkbox" data-size="2294" type="checkbox" value="balloons"> balloons
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bank"></div>
+          <input class="checkbox" data-size="977" type="checkbox" value="bank"> bank
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bomb"></div>
+          <input class="checkbox" data-size="2993" type="checkbox" value="bomb"> bomb
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="calculator"></div>
+          <input class="checkbox" data-size="5651" type="checkbox" value="calculator"> calculator
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folders"></div>
+          <input class="checkbox" data-size="1593" type="checkbox" value="folders"> folders
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="ice-cream"></div>
+          <input class="checkbox" data-size="2480" type="checkbox" value="ice-cream"> ice-cream
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="medkit"></div>
+          <input class="checkbox" data-size="1079" type="checkbox" value="medkit"> medkit
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="paper-plane"></div>
+          <input class="checkbox" data-size="332" type="checkbox" value="paper-plane"> paper-plane
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="wine"></div>
+          <input class="checkbox" data-size="1447" type="checkbox" value="wine"> wine
+          </label>
+        </div>
+      </div>
+      <div class="span12">
+        <h3 class="page-header">New in v1.3</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="connect"></div>
+          <input class="checkbox" data-size="919" type="checkbox" value="connect"> connect
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="disconnect"></div>
+          <input class="checkbox" data-size="2313" type="checkbox" value="disconnect"> disconnect
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="collapse-down"></div>
+          <input class="checkbox" data-size="1809" type="checkbox" value="collapse-down"> collapse-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="collapse-up"></div>
+          <input class="checkbox" data-size="1820" type="checkbox" value="collapse-up"> collapse-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="expand-left"></div>
+          <input class="checkbox" data-size="1823" type="checkbox" value="expand-left"> expand-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="expand-right"></div>
+          <input class="checkbox" data-size="1811" type="checkbox" value="expand-right"> expand-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="battery"></div>
+          <input class="checkbox" data-size="562" type="checkbox" value="battery"> battery
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="medal"></div>
+          <input class="checkbox" data-size="4856" type="checkbox" value="medal"> medal
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="servers"></div>
+          <input class="checkbox" data-size="4608" type="checkbox" value="servers"> servers
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="apple-logo"></div>
+          <input class="checkbox" data-size="678" type="checkbox" value="apple-logo"> apple-logo
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bing"></div>
+          <input class="checkbox" data-size="516" type="checkbox" value="bing"> bing
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bitbucket"></div>
+          <input class="checkbox" data-size="1151" type="checkbox" value="bitbucket"> bitbucket
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="blogger"></div>
+          <input class="checkbox" data-size="529" type="checkbox" value="blogger"> blogger
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="concrete5"></div>
+          <input class="checkbox" data-size="1091" type="checkbox" value="concrete5"> concrete5
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="deviantart"></div>
+          <input class="checkbox" data-size="658" type="checkbox" value="deviantart"> deviantart
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="dribbble"></div>
+          <input class="checkbox" data-size="1081" type="checkbox" value="dribbble"> dribbble
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="github"></div>
+          <input class="checkbox" data-size="1702" type="checkbox" value="github"> github
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="github-alt"></div>
+          <input class="checkbox" data-size="1085" type="checkbox" value="github-alt"> github-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="instagram"></div>
+          <input class="checkbox" data-size="784" type="checkbox" value="instagram"> instagram
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="opera"></div>
+          <input class="checkbox" data-size="372" type="checkbox" value="opera"> opera
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="reddit"></div>
+          <input class="checkbox" data-size="2327" type="checkbox" value="reddit"> reddit
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="soundcloud"></div>
+          <input class="checkbox" data-size="592" type="checkbox" value="soundcloud"> soundcloud
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="tumblr"></div>
+          <input class="checkbox" data-size="599" type="checkbox" value="tumblr"> tumblr
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vimeo"></div>
+          <input class="checkbox" data-size="432" type="checkbox" value="vimeo"> vimeo
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vk"></div>
+          <input class="checkbox" data-size="1188" type="checkbox" value="vk"> vk
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="xing"></div>
+          <input class="checkbox" data-size="916" type="checkbox" value="xing"> xing
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="yahoo"></div>
+          <input class="checkbox" data-size="710" type="checkbox" value="yahoo"> yahoo
+          </label>
+        </div>
+      </div>
+      <div class="span12">
+        <h3 class="page-header">New in v1.2</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="address-book"></div>
+          <input class="checkbox" data-size="5415" type="checkbox" value="address-book"> address-book
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="albums"></div>
+          <input class="checkbox" data-size="1429" type="checkbox" value="albums"> albums
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="anchor"></div>
+          <input class="checkbox" data-size="710" type="checkbox" value="anchor"> anchor
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="archive-add"></div>
+          <input class="checkbox" data-size="1035" type="checkbox" value="archive-add"> archive-add
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="archive-extract"></div>
+          <input class="checkbox" data-size="1003" type="checkbox" value="archive-extract"> archive-extract
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="asterisk"></div>
+          <input class="checkbox" data-size="2086" type="checkbox" value="asterisk"> asterisk
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bluetooth"></div>
+          <input class="checkbox" data-size="451" type="checkbox" value="bluetooth"> bluetooth
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="brightness-down"></div>
+          <input class="checkbox" data-size="1932" type="checkbox" value="brightness-down"> brightness-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="brightness-up"></div>
+          <input class="checkbox" data-size="1841" type="checkbox" value="brightness-up"> brightness-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="crop"></div>
+          <input class="checkbox" data-size="1222" type="checkbox" value="crop"> crop
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="eyedropper"></div>
+          <input class="checkbox" data-size="2874" type="checkbox" value="eyedropper"> eyedropper
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="file-export"></div>
+          <input class="checkbox" data-size="659" type="checkbox" value="file-export"> file-export
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="file-import"></div>
+          <input class="checkbox" data-size="655" type="checkbox" value="file-import"> file-import
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folder-add"></div>
+          <input class="checkbox" data-size="613" type="checkbox" value="folder-add"> folder-add
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folder-flag"></div>
+          <input class="checkbox" data-size="1579" type="checkbox" value="folder-flag"> folder-flag
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folder-lock"></div>
+          <input class="checkbox" data-size="1050" type="checkbox" value="folder-lock"> folder-lock
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folder-new"></div>
+          <input class="checkbox" data-size="1974" type="checkbox" value="folder-new"> folder-new
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folder-open"></div>
+          <input class="checkbox" data-size="1451" type="checkbox" value="folder-open"> folder-open
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="folder-remove"></div>
+          <input class="checkbox" data-size="595" type="checkbox" value="folder-remove"> folder-remove
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="inbox-empty"></div>
+          <input class="checkbox" data-size="1124" type="checkbox" value="inbox-empty"> inbox-empty
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="inbox-in"></div>
+          <input class="checkbox" data-size="748" type="checkbox" value="inbox-in"> inbox-in
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="inbox-out"></div>
+          <input class="checkbox" data-size="776" type="checkbox" value="inbox-out"> inbox-out
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="indent-left"></div>
+          <input class="checkbox" data-size="933" type="checkbox" value="indent-left"> indent-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="indent-right"></div>
+          <input class="checkbox" data-size="907" type="checkbox" value="indent-right"> indent-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-add"></div>
+          <input class="checkbox" data-size="696" type="checkbox" value="message-add"> message-add
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-flag"></div>
+          <input class="checkbox" data-size="1728" type="checkbox" value="message-flag"> message-flag
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-in"></div>
+          <input class="checkbox" data-size="881" type="checkbox" value="message-in"> message-in
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-lock"></div>
+          <input class="checkbox" data-size="1113" type="checkbox" value="message-lock"> message-lock
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-new"></div>
+          <input class="checkbox" data-size="2060" type="checkbox" value="message-new"> message-new
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-out"></div>
+          <input class="checkbox" data-size="931" type="checkbox" value="message-out"> message-out
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="message-remove"></div>
+          <input class="checkbox" data-size="679" type="checkbox" value="message-remove"> message-remove
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="microphone"></div>
+          <input class="checkbox" data-size="2238" type="checkbox" value="microphone"> microphone
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="moon"></div>
+          <input class="checkbox" data-size="796" type="checkbox" value="moon"> moon
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="new-window"></div>
+          <input class="checkbox" data-size="398" type="checkbox" value="new-window"> new-window
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="pin-off"></div>
+          <input class="checkbox" data-size="3779" type="checkbox" value="pin-off"> pin-off
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="pin-on"></div>
+          <input class="checkbox" data-size="4296" type="checkbox" value="pin-on"> pin-on
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="playlist"></div>
+          <input class="checkbox" data-size="3594" type="checkbox" value="playlist"> playlist
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="save"></div>
+          <input class="checkbox" data-size="1063" type="checkbox" value="save"> save
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="shopping-cart-in"></div>
+          <input class="checkbox" data-size="960" type="checkbox" value="shopping-cart-in"> shopping-cart-in
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="shopping-cart-out"></div>
+          <input class="checkbox" data-size="976" type="checkbox" value="shopping-cart-out"> shopping-cart-out
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="striked"></div>
+          <input class="checkbox" data-size="1057" type="checkbox" value="striked"> striked
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="text-decrease"></div>
+          <input class="checkbox" data-size="720" type="checkbox" value="text-decrease"> text-decrease
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="text-height"></div>
+          <input class="checkbox" data-size="2187" type="checkbox" value="text-height"> text-height
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="text-increase"></div>
+          <input class="checkbox" data-size="716" type="checkbox" value="text-increase"> text-increase
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="text-size"></div>
+          <input class="checkbox" data-size="1078" type="checkbox" value="text-size"> text-size
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="text-width"></div>
+          <input class="checkbox" data-size="2158" type="checkbox" value="text-width"> text-width
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="thumbnails-big"></div>
+          <input class="checkbox" data-size="916" type="checkbox" value="thumbnails-big"> thumbnails-big
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="thumbnails-small"></div>
+          <input class="checkbox" data-size="1511" type="checkbox" value="thumbnails-small"> thumbnails-small
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="timer"></div>
+          <input class="checkbox" data-size="1246" type="checkbox" value="timer"> timer
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="unlink"></div>
+          <input class="checkbox" data-size="5819" type="checkbox" value="unlink"> unlink
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="user-add"></div>
+          <input class="checkbox" data-size="950" type="checkbox" value="user-add"> user-add
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="user-ban"></div>
+          <input class="checkbox" data-size="1355" type="checkbox" value="user-ban"> user-ban
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="user-flag"></div>
+          <input class="checkbox" data-size="2000" type="checkbox" value="user-flag"> user-flag
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="user-remove"></div>
+          <input class="checkbox" data-size="933" type="checkbox" value="user-remove"> user-remove
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="users-add"></div>
+          <input class="checkbox" data-size="1745" type="checkbox" value="users-add"> users-add
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="users-ban"></div>
+          <input class="checkbox" data-size="2061" type="checkbox" value="users-ban"> users-ban
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="users-remove"></div>
+          <input class="checkbox" data-size="1639" type="checkbox" value="users-remove"> users-remove
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vector-circle"></div>
+          <input class="checkbox" data-size="1866" type="checkbox" value="vector-circle"> vector-circle
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vector-curve"></div>
+          <input class="checkbox" data-size="826" type="checkbox" value="vector-curve"> vector-curve
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vector-line"></div>
+          <input class="checkbox" data-size="660" type="checkbox" value="vector-line"> vector-line
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vector-polygon"></div>
+          <input class="checkbox" data-size="1386" type="checkbox" value="vector-polygon"> vector-polygon
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="vector-square"></div>
+          <input class="checkbox" data-size="1189" type="checkbox" value="vector-square"> vector-square
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="webcam"></div>
+          <input class="checkbox" data-size="2330" type="checkbox" value="webcam"> webcam
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="wifi"></div>
+          <input class="checkbox" data-size="648" type="checkbox" value="wifi"> wifi
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="wifi-alt"></div>
+          <input class="checkbox" data-size="1060" type="checkbox" value="wifi-alt"> wifi-alt
+          </label>
+        </div>
+      </div>
+      <div class="span12">
+        <h3 class="page-header">Miscellaneous Web Icons</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="adjust"></div>
+          <input class="checkbox" data-size="1846" type="checkbox" value="adjust"> adjust
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="alarm"></div>
+          <input class="checkbox" data-size="2019" type="checkbox" value="alarm"> alarm
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="apple"></div>
+          <input class="checkbox" data-size="3530" type="checkbox" value="apple"> apple
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="balance"></div>
+          <input class="checkbox" data-size="1979" type="checkbox" value="balance"> balance
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="ban"></div>
+          <input class="checkbox" data-size="1392" type="checkbox" value="ban"> ban
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="barchart"></div>
+          <input class="checkbox" data-size="2405" type="checkbox" value="barchart"> barchart
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="barcode"></div>
+          <input class="checkbox" data-size="450" type="checkbox" value="barcode"> barcode
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="beer"></div>
+          <input class="checkbox" data-size="1219" type="checkbox" value="beer"> beer
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="bell"></div>
+          <input class="checkbox" data-size="1026" type="checkbox" value="bell"> bell
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="biohazard"></div>
+          <input class="checkbox" data-size="9391" type="checkbox" value="biohazard"> biohazard
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="bolt"></div>
+          <input class="checkbox" data-size="1033" type="checkbox" value="bolt"> bolt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bookmark"></div>
+          <input class="checkbox" data-size="1412" type="checkbox" value="bookmark"> bookmark
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="briefcase"></div>
+          <input class="checkbox" data-size="3294" type="checkbox" value="briefcase"> briefcase
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="brush"></div>
+          <input class="checkbox" data-size="2013" type="checkbox" value="brush"> brush
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="bug"></div>
+          <input class="checkbox" data-size="1559" type="checkbox" value="bug"> bug
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="calendar"></div>
+          <input class="checkbox" data-size="5612" type="checkbox" value="calendar"> calendar
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="camcoder"></div>
+          <input class="checkbox" data-size="3325" type="checkbox" value="camcoder"> camcoder
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="camera"></div>
+          <input class="checkbox" data-size="1726" type="checkbox" value="camera"> camera
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="camera-alt"></div>
+          <input class="checkbox" data-size="2719" type="checkbox" value="camera-alt"> camera-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="car"></div>
+          <input class="checkbox" data-size="2182" type="checkbox" value="car"> car
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cellphone"></div>
+          <input class="checkbox" data-size="4799" type="checkbox" value="cellphone"> cellphone
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="certificate"></div>
+          <input class="checkbox" data-size="3504" type="checkbox" value="certificate"> certificate
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="check"></div>
+          <input class="checkbox" data-size="1162" type="checkbox" value="check"> check
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="check-circle"></div>
+          <input class="checkbox" data-size="1147" type="checkbox" value="check-circle"> check-circle
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="check-circle-alt"></div>
+          <input class="checkbox" data-size="1359" type="checkbox" value="check-circle-alt"> check-circle-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="checked-off"></div>
+          <input class="checkbox" data-size="235" type="checkbox" value="checked-off"> checked-off
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="checked-on"></div>
+          <input class="checkbox" data-size="1315" type="checkbox" value="checked-on"> checked-on
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="circle"></div>
+          <input class="checkbox" data-size="325" type="checkbox" value="circle"> circle
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="circle-alt"></div>
+          <input class="checkbox" data-size="215" type="checkbox" value="circle-alt"> circle-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="clapboard"></div>
+          <input class="checkbox" data-size="968" type="checkbox" value="clapboard"> clapboard
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="clip"></div>
+          <input class="checkbox" data-size="2360" type="checkbox" value="clip"> clip
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="clock"></div>
+          <input class="checkbox" data-size="1323" type="checkbox" value="clock"> clock
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud"></div>
+          <input class="checkbox" data-size="1845" type="checkbox" value="cloud"> cloud
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud-bolts"></div>
+          <input class="checkbox" data-size="927" type="checkbox" value="cloud-bolts"> cloud-bolts
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud-rain"></div>
+          <input class="checkbox" data-size="2161" type="checkbox" value="cloud-rain"> cloud-rain
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud-snow"></div>
+          <input class="checkbox" data-size="2457" type="checkbox" value="cloud-snow"> cloud-snow
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud-sun"></div>
+          <input class="checkbox" data-size="6974" type="checkbox" value="cloud-sun"> cloud-sun
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud-down"></div>
+          <input class="checkbox" data-size="1261" type="checkbox" value="cloud-down"> cloud-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="cloud-up"></div>
+          <input class="checkbox" data-size="1393" type="checkbox" value="cloud-up"> cloud-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="code"></div>
+          <input class="checkbox" data-size="2898" type="checkbox" value="code"> code
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="comment"></div>
+          <input class="checkbox" data-size="490" type="checkbox" value="comment"> comment
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="comments"></div>
+          <input class="checkbox" data-size="2263" type="checkbox" value="comments"> comments
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="compass"></div>
+          <input class="checkbox" data-size="742" type="checkbox" value="compass"> compass
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="credit-card"></div>
+          <input class="checkbox" data-size="7057" type="checkbox" value="credit-card"> credit-card
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="css3"></div>
+          <input class="checkbox" data-size="1132" type="checkbox" value="css3"> css3
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="dashboard"></div>
+          <input class="checkbox" data-size="7211" type="checkbox" value="dashboard"> dashboard
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="desktop"></div>
+          <input class="checkbox" data-size="1049" type="checkbox" value="desktop"> desktop
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="doc-landscape"></div>
+          <input class="checkbox" data-size="1083" type="checkbox" value="doc-landscape"> doc-landscape
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="doc-portrait"></div>
+          <input class="checkbox" data-size="1111" type="checkbox" value="doc-portrait"> doc-portrait
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="download"></div>
+          <input class="checkbox" data-size="603" type="checkbox" value="download"> download
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="download-alt"></div>
+          <input class="checkbox" data-size="497" type="checkbox" value="download-alt"> download-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="drop"></div>
+          <input class="checkbox" data-size="664" type="checkbox" value="drop"> drop
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="edit"></div>
+          <input class="checkbox" data-size="871" type="checkbox" value="edit"> edit
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="eye-close"></div>
+          <input class="checkbox" data-size="2747" type="checkbox" value="eye-close"> eye-close
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="eye-open"></div>
+          <input class="checkbox" data-size="2329" type="checkbox" value="eye-open"> eye-open
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="film"></div>
+          <input class="checkbox" data-size="2388" type="checkbox" value="film"> film
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="filter"></div>
+          <input class="checkbox" data-size="1584" type="checkbox" value="filter"> filter
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="fire"></div>
+          <input class="checkbox" data-size="817" type="checkbox" value="fire"> fire
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="flag"></div>
+          <input class="checkbox" data-size="4519" type="checkbox" value="flag"> flag
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="gear"></div>
+          <input class="checkbox" data-size="1096" type="checkbox" value="gear"> gear
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="gears"></div>
+          <input class="checkbox" data-size="2180" type="checkbox" value="gears"> gears
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="ghost"></div>
+          <input class="checkbox" data-size="1189" type="checkbox" value="ghost"> ghost
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="gift"></div>
+          <input class="checkbox" data-size="2647" type="checkbox" value="gift"> gift
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="glass"></div>
+          <input class="checkbox" data-size="2974" type="checkbox" value="glass"> glass
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="globe"></div>
+          <input class="checkbox" data-size="3097" type="checkbox" value="globe"> globe
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="hammer"></div>
+          <input class="checkbox" data-size="1130" type="checkbox" value="hammer"> hammer
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="heart"></div>
+          <input class="checkbox" data-size="341" type="checkbox" value="heart"> heart
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="heart-alt"></div>
+          <input class="checkbox" data-size="2373" type="checkbox" value="heart-alt"> heart-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="help"></div>
+          <input class="checkbox" data-size="2697" type="checkbox" value="help"> help
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="home"></div>
+          <input class="checkbox" data-size="946" type="checkbox" value="home"> home
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="html5"></div>
+          <input class="checkbox" data-size="1125" type="checkbox" value="html5"> html5
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="image"></div>
+          <input class="checkbox" data-size="2516" type="checkbox" value="image"> image
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="inbox"></div>
+          <input class="checkbox" data-size="1077" type="checkbox" value="inbox"> inbox
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="info"></div>
+          <input class="checkbox" data-size="1269" type="checkbox" value="info"> info
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="key"></div>
+          <input class="checkbox" data-size="3432" type="checkbox" value="key"> key
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="lab"></div>
+          <input class="checkbox" data-size="1211" type="checkbox" value="lab"> lab
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="laptop"></div>
+          <input class="checkbox" data-size="1025" type="checkbox" value="laptop"> laptop
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="leaf"></div>
+          <input class="checkbox" data-size="1007" type="checkbox" value="leaf"> leaf
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="legal"></div>
+          <input class="checkbox" data-size="1594" type="checkbox" value="legal"> legal
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="linechart"></div>
+          <input class="checkbox" data-size="1062" type="checkbox" value="linechart"> linechart
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="link"></div>
+          <input class="checkbox" data-size="1230" type="checkbox" value="link"> link
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="location"></div>
+          <input class="checkbox" data-size="567" type="checkbox" value="location"> location
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="lock"></div>
+          <input class="checkbox" data-size="570" type="checkbox" value="lock"> lock
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="magic"></div>
+          <input class="checkbox" data-size="1927" type="checkbox" value="magic"> magic
+          </label>
+        </div>
+         <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="magic-alt"></div>
+          <input class="checkbox" data-size="2816" type="checkbox" value="magic-alt"> magic-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="magnet"></div>
+          <input class="checkbox" data-size="789" type="checkbox" value="magnet"> magnet
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="mail"></div>
+          <input class="checkbox" data-size="1350" type="checkbox" value="mail"> mail1
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="mail-alt"></div>
+          <input class="checkbox" data-size="835" type="checkbox" value="mail-alt"> mail-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="map"></div>
+          <input class="checkbox" data-size="3993" type="checkbox" value="map"> map
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="minus"></div>
+          <input class="checkbox" data-size="701" type="checkbox" value="minus"> minus
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="minus-alt"></div>
+          <input class="checkbox" data-size="814" type="checkbox" value="minus-alt"> minus-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="money"></div>
+          <input class="checkbox" data-size="1523" type="checkbox" value="money"> money
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="more"></div>
+          <input class="checkbox" data-size="2497" type="checkbox" value="more"> more
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="move"></div>
+          <input class="checkbox" data-size="831" type="checkbox" value="move"> move
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="music"></div>
+          <input class="checkbox" data-size="1640" type="checkbox" value="music"> music
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="notebook"></div>
+          <input class="checkbox" data-size="2455" type="checkbox" value="notebook"> notebook
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="pacman"></div>
+          <input class="checkbox" data-size="1108" type="checkbox" value="pacman"> pacman
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="pen"></div>
+          <input class="checkbox" data-size="4674" type="checkbox" value="pen"> pen
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="pencil"></div>
+          <input class="checkbox" data-size="985" type="checkbox" value="pencil"> pencil
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="phone"></div>
+          <input class="checkbox" data-size="2184" type="checkbox" value="phone"> phone
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="piechart"></div>
+          <input class="checkbox" data-size="1039" type="checkbox" value="piechart"> piechart
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="piggybank"></div>
+          <input class="checkbox" data-size="3737" type="checkbox" value="piggybank"> piggybank
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="plane-down"></div>
+          <input class="checkbox" data-size="693" type="checkbox" value="plane-down"> plane-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="plane-up"></div>
+          <input class="checkbox" data-size="604" type="checkbox" value="plane-up"> plane-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="plus"></div>
+          <input class="checkbox" data-size="1396" type="checkbox" value="plus"> plus
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="plus-alt"></div>
+          <input class="checkbox" data-size="1256" type="checkbox" value="plus-alt"> plus-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="presentation"></div>
+          <input class="checkbox" data-size="3953" type="checkbox" value="presentation"> presentation
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="printer"></div>
+          <input class="checkbox" data-size="2708" type="checkbox" value="printer"> printer
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="qrcode"></div>
+          <input class="checkbox" data-size="675" type="checkbox" value="qrcode"> qrcode
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="question"></div>
+          <input class="checkbox" data-size="2874" type="checkbox" value="question"> question
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="quote-left"></div>
+          <input class="checkbox" data-size="999" type="checkbox" value="quote-left"> quote-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="quote-right"></div>
+          <input class="checkbox" data-size="997" type="checkbox" value="quote-right"> quote-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="remove"></div>
+          <input class="checkbox" data-size="2554" type="checkbox" value="remove"> remove
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="remove-alt"></div>
+          <input class="checkbox" data-size="1649" type="checkbox" value="remove-alt"> remove-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="remove-circle"></div>
+          <input class="checkbox" data-size="2866" type="checkbox" value="remove-circle"> remove-circle
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="responsive"></div>
+          <input class="checkbox" data-size="1431" type="checkbox" value="responsive"> responsive
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="responsive-menu"></div>
+          <input class="checkbox" data-size="749" type="checkbox" value="responsive-menu"> responsive-menu
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="retweet"></div>
+          <input class="checkbox" data-size="2720" type="checkbox" value="retweet"> retweet
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="rocket"></div>
+          <input class="checkbox" data-size="2075" type="checkbox" value="rocket"> rocket
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="sandglass"></div>
+          <input class="checkbox" data-size="5110" type="checkbox" value="sandglass"> sandglass
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="scissors"></div>
+          <input class="checkbox" data-size="1582" type="checkbox" value="scissors"> scissors
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="screenshot"></div>
+          <input class="checkbox" data-size="915" type="checkbox" value="screenshot"> screenshot
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="search"></div>
+          <input class="checkbox" data-size="2178" type="checkbox" value="search"> search
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="settings"></div>
+          <input class="checkbox" data-size="4470" type="checkbox" value="settings"> settings
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="share"></div>
+          <input class="checkbox" data-size="2034" type="checkbox" value="share"> share
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="shield"></div>
+          <input class="checkbox" data-size="1749" type="checkbox" value="shield"> shield
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="shopping-cart"></div>
+          <input class="checkbox" data-size="2696" type="checkbox" value="shopping-cart"> shopping-cart
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="shuffle"></div>
+          <input class="checkbox" data-size="2504" type="checkbox" value="shuffle"> shuffle
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="sign-in"></div>
+          <input class="checkbox" data-size="563" type="checkbox" value="sign-in"> sign-in
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="sign-out"></div>
+          <input class="checkbox" data-size="562" type="checkbox" value="sign-out"> sign-out
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="signal"></div>
+          <input class="checkbox" data-size="950" type="checkbox" value="signal"> signal
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="sitemap"></div>
+          <input class="checkbox" data-size="2232" type="checkbox" value="sitemap"> sitemap
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="sky-dish"></div>
+          <input class="checkbox" data-size="1732" type="checkbox" value="sky-dish"> sky-dish
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="sort"></div>
+          <input class="checkbox" data-size="700" type="checkbox" value="sort"> sort
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="sort-down"></div>
+          <input class="checkbox" data-size="376" type="checkbox" value="sort-down"> sort-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="sort-up"></div>
+          <input class="checkbox" data-size="367" type="checkbox" value="sort-up"> sort-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="star-empty"></div>
+          <input class="checkbox" data-size="840" type="checkbox" value="star-empty"> star-empty
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="star-full"></div>
+          <input class="checkbox" data-size="720" type="checkbox" value="star-full"> star-full
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="star-half"></div>
+          <input class="checkbox" data-size="793" type="checkbox" value="star-half"> star-half
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="stopwatch"></div>
+          <input class="checkbox" data-size="7490" type="checkbox" value="stopwatch"> stopwatch
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="sun"></div>
+          <input class="checkbox" data-size="5566" type="checkbox" value="sun"> sun
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="tablet"></div>
+          <input class="checkbox" data-size="3135" type="checkbox" value="tablet"> tablet
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="tag"></div>
+          <input class="checkbox" data-size="2154" type="checkbox" value="tag"> tag
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="tags"></div>
+          <input class="checkbox" data-size="1813" type="checkbox" value="tags"> tags
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="tasks"></div>
+          <input class="checkbox" data-size="2982" type="checkbox" value="tasks"> tasks
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="thermo-down"></div>
+          <input class="checkbox" data-size="802" type="checkbox" value="thermo-down"> thermo-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="thermo-up"></div>
+          <input class="checkbox" data-size="875" type="checkbox" value="thermo-up"> thermo-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="thumbs-down"></div>
+          <input class="checkbox" data-size="677" type="checkbox" value="thumbs-down"> thumbs-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="thumbs-up"></div>
+          <input class="checkbox" data-size="685" type="checkbox" value="thumbs-up"> thumbs-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="trash"></div>
+          <input class="checkbox" data-size="1179" type="checkbox" value="trash"> trash
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="tree"></div>
+          <input class="checkbox" data-size="3247" type="checkbox" value="tree"> tree
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="trophy"></div>
+          <input class="checkbox" data-size="2840" type="checkbox" value="trophy"> trophy
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="truck"></div>
+          <input class="checkbox" data-size="2276" type="checkbox" value="truck"> truck
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="umbrella"></div>
+          <input class="checkbox" data-size="2290" type="checkbox" value="umbrella"> umbrella
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="unlock"></div>
+          <input class="checkbox" data-size="551" type="checkbox" value="unlock"> unlock
+          </label>
+        </div>      
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="upload"></div>
+          <input class="checkbox" data-size="615" type="checkbox" value="upload"> upload
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="upload-alt"></div>
+          <input class="checkbox" data-size="506" type="checkbox" value="upload-alt"> upload-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="user"></div>
+          <input class="checkbox" data-size="2084" type="checkbox" value="user"> user
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="users"></div>
+          <input class="checkbox" data-size="2471" type="checkbox" value="users"> users
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="warning"></div>
+          <input class="checkbox" data-size="1240" type="checkbox" value="warning"> warning
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="warning-alt"></div>
+          <input class="checkbox" data-size="1022" type="checkbox" value="warning-alt"> warning-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="wrench"></div>
+          <input class="checkbox" data-size="2313" type="checkbox" value="wrench"> wrench
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="zoom-in"></div>
+          <input class="checkbox" data-size="837" type="checkbox" value="zoom-in"> zoom-in
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="zoom-out"></div>
+          <input class="checkbox" data-size="788" type="checkbox" value="zoom-out"> zoom-out
+          </label>
+        </div>
+      </div><!--end span12 Misc-->
+      
+      <div class="span12">
+        <h3 class="page-header">Arrows and Directional Icons</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-down"></div>
+          <input class="checkbox" data-size="998" type="checkbox" value="angle-down"> angle-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-left"></div>
+          <input class="checkbox" data-size="985" type="checkbox" value="angle-left"> angle-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-right"></div>
+          <input class="checkbox" data-size="994" type="checkbox" value="angle-right"> angle-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-up"></div>
+          <input class="checkbox" data-size="992" type="checkbox" value="angle-up"> angle-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-double-down"></div>
+          <input class="checkbox" data-size="917" type="checkbox" value="angle-double-down"> angle-double-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-double-left"></div>
+          <input class="checkbox" data-size="918" type="checkbox" value="angle-double-left"> angle-double-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-double-right"></div>
+          <input class="checkbox" data-size="907" type="checkbox" value="angle-double-right"> angle-double-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-double-up"></div>
+          <input class="checkbox" data-size="914" type="checkbox" value="angle-double-up"> angle-double-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-wide-down"></div>
+          <input class="checkbox" data-size="1026" type="checkbox" value="angle-wide-down"> angle-wide-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-wide-left"></div>
+          <input class="checkbox" data-size="1030" type="checkbox" value="angle-wide-left"> angle-wide-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-wide-right"></div>
+          <input class="checkbox" data-size="1028" type="checkbox" value="angle-wide-right"> angle-wide-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="angle-wide-up"></div>
+          <input class="checkbox" data-size="1029" type="checkbox" value="angle-wide-up"> angle-wide-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-down"></div>
+          <input class="checkbox" data-size="1172" type="checkbox" value="arrow-down"> arrow-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-left"></div>
+          <input class="checkbox" data-size="1182" type="checkbox" value="arrow-left"> arrow-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-right"></div>
+          <input class="checkbox" data-size="1163" type="checkbox" value="arrow-right"> arrow-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-up"></div>
+          <input class="checkbox" data-size="1166" type="checkbox" value="arrow-up"> arrow-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-circle-down"></div>
+          <input class="checkbox" data-size="1558" type="checkbox" value="arrow-circle-down"> arrow-circle-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-circle-left"></div>
+          <input class="checkbox" data-size="1676" type="checkbox" value="arrow-circle-left"> arrow-circle-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-circle-right"></div>
+          <input class="checkbox" data-size="1557" type="checkbox" value="arrow-circle-right"> arrow-circle-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="arrow-circle-up"></div>
+          <input class="checkbox" data-size="1563" type="checkbox" value="arrow-circle-up"> arrow-circle-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="caret-down"></div>
+          <input class="checkbox" data-size="308" type="checkbox" value="caret-down"> caret-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="caret-left"></div>
+          <input class="checkbox" data-size="304" type="checkbox" value="caret-left"> caret-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="caret-right"></div>
+          <input class="checkbox" data-size="299" type="checkbox" value="caret-right"> caret-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="caret-up"></div>
+          <input class="checkbox" data-size="296" type="checkbox" value="caret-up"> caret-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="chevron-down"></div>
+          <input class="checkbox" data-size="891" type="checkbox" value="chevron-down"> chevron-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="chevron-left"></div>
+          <input class="checkbox" data-size="898" type="checkbox" value="chevron-left"> chevron-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="chevron-right"></div>
+          <input class="checkbox" data-size="898" type="checkbox" value="chevron-right"> chevron-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="chevron-up"></div>
+          <input class="checkbox" data-size="918" type="checkbox" value="chevron-up"> chevron-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="exchange"></div>
+          <input class="checkbox" data-size="1524" type="checkbox" value="exchange"> exchange
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="external-link"></div>
+          <input class="checkbox" data-size="1272" type="checkbox" value="external-link"> external-link
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="hand-down"></div>
+          <input class="checkbox" data-size="1329" type="checkbox" value="hand-down"> hand-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="hand-left"></div>
+          <input class="checkbox" data-size="1406" type="checkbox" value="hand-left"> hand-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="hand-right"></div>
+          <input class="checkbox" data-size="1382" type="checkbox" value="hand-right"> hand-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="hand-up"></div>
+          <input class="checkbox" data-size="1352" type="checkbox" value="hand-up"> hand-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="recycled"></div>
+          <input class="checkbox" data-size="1946" type="checkbox" value="recycled"> recycled
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="redo"></div>
+          <input class="checkbox" data-size="1463" type="checkbox" value="redo"> redo
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="refresh"></div>
+          <input class="checkbox" data-size="785" type="checkbox" value="refresh"> refresh
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-big"></div>
+          <input class="checkbox" data-size="414" type="checkbox" value="resize-big"> resize-big
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-big-alt"></div>
+          <input class="checkbox" data-size="743" type="checkbox" value="resize-big-alt"> resize-big-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-horizontal"></div>
+          <input class="checkbox" data-size="463" type="checkbox" value="resize-horizontal"> resize-horizontal
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-horizontal-alt"></div>
+          <input class="checkbox" data-size="796" type="checkbox" value="resize-horizontal-alt"> resize-horizontal-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-small"></div>
+          <input class="checkbox" data-size="620" type="checkbox" value="resize-small"> resize-small
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-small-alt"></div>
+          <input class="checkbox" data-size="919" type="checkbox" value="resize-small-alt"> resize-small-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-vertical"></div>
+          <input class="checkbox" data-size="455" type="checkbox" value="resize-vertical"> resize-vertical
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="resize-vertical-alt"></div>
+          <input class="checkbox" data-size="787" type="checkbox" value="resize-vertical-alt"> resize-vertical-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="rotate-left"></div>
+          <input class="checkbox" data-size="637" type="checkbox" value="rotate-left"> rotate-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="rotate-right"></div>
+          <input class="checkbox" data-size="640" type="checkbox" value="rotate-right"> rotate-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="screen-full"></div>
+          <input class="checkbox" data-size="740" type="checkbox" value="screen-full"> screen-full
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="screen-full-alt"></div>
+          <input class="checkbox" data-size="1090" type="checkbox" value="screen-full-alt"> screen-full-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="screen-small"></div>
+          <input class="checkbox" data-size="797" type="checkbox" value="screen-small"> screen-small
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="screen-small-alt"></div>
+          <input class="checkbox" data-size="1106" type="checkbox" value="screen-small-alt"> screen-small-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="undo"></div>
+          <input class="checkbox" data-size="1468" type="checkbox" value="undo"> undo
+          </label>
+        </div>
+      </div><!--end span12 Arrows-->
+      
+      <div class="span12">
+        <h3 class="page-header">Text Control Icons</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="align-center"></div>
+          <input class="checkbox" data-size="1711" type="checkbox" value="align-center"> align-center
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="align-justify"></div>
+          <input class="checkbox" data-size="1715" type="checkbox" value="align-justify"> align-justify
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="align-left"></div>
+          <input class="checkbox" data-size="1708" type="checkbox" value="align-left"> align-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="align-right"></div>
+          <input class="checkbox" data-size="1735" type="checkbox" value="align-right"> align-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="bold"></div>
+          <input class="checkbox" data-size="2254" type="checkbox" value="bold"> bold
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="columns"></div>
+          <input class="checkbox" data-size="1044" type="checkbox" value="columns"> columns
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="font"></div>
+          <input class="checkbox" data-size="2805" type="checkbox" value="font"> font
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="italic"></div>
+          <input class="checkbox" data-size="1505" type="checkbox" value="italic"> italic
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="list"></div>
+          <input class="checkbox" data-size="4633" type="checkbox" value="list"> list
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="list-ol"></div>
+          <input class="checkbox" data-size="3590" type="checkbox" value="list-ol"> list-ol
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="list-ul"></div>
+          <input class="checkbox" data-size="2404" type="checkbox" value="list-ul"> list-ul
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="table"></div>
+          <input class="checkbox" data-size="2423" type="checkbox" value="table"> table
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="underline"></div>
+          <input class="checkbox" data-size="995" type="checkbox" value="underline"> underline
+          </label>
+        </div>
+      </div><!--end span12 Text-->
+
+      <div class="span12">
+        <h3 class="page-header">Video Player Icons</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-play"></div>
+          <input class="checkbox" data-size="323" type="checkbox" value="video-play"> video-play
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-play-alt"></div>
+          <input class="checkbox" data-size="1017" type="checkbox" value="video-play-alt"> video-play-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-stop"></div>
+          <input class="checkbox" data-size="628" type="checkbox" value="video-stop"> video-stop
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-pause"></div>
+          <input class="checkbox" data-size="1025" type="checkbox" value="video-pause"> video-pause
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-eject"></div>
+          <input class="checkbox" data-size="1222" type="checkbox" value="video-eject"> video-eject
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-backward"></div>
+          <input class="checkbox" data-size="540" type="checkbox" value="video-backward"> video-backward
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-step-backward"></div>
+          <input class="checkbox" data-size="523" type="checkbox" value="video-step-backward"> video-step-backward
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-fast-backward"></div>
+          <input class="checkbox" data-size="770" type="checkbox" value="video-fast-backward"> video-fast-backward
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-forward"></div>
+          <input class="checkbox" data-size="533" type="checkbox" value="video-forward"> video-forward
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-step-forward"></div>
+          <input class="checkbox" data-size="523" type="checkbox" value="video-step-forward"> video-step-forward
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="video-fast-forward"></div>
+          <input class="checkbox" data-size="774" type="checkbox" value="video-fast-forward"> video-fast-forward
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="speaker"></div>
+          <input class="checkbox" data-size="1589" type="checkbox" value="speaker"> speaker
+          </label>
+        </div>
+      </div><!--end span12 Video-->
+   
+      <div class="span12">
+        <h3 class="page-header">Socials, Platforms, Browsers, etc. (NOT ANIMATED since v1.1, except "livicon")</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="android"></div>
+          <input class="checkbox" data-size="1195" type="checkbox" value="android"> android
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="bootstrap"></div>
+          <input class="checkbox" data-size="498" type="checkbox" value="bootstrap"> bootstrap
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="chrome"></div>
+          <input class="checkbox" data-size="789" type="checkbox" value="chrome"> chrome
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="dropbox"></div>
+          <input class="checkbox" data-size="373" type="checkbox" value="dropbox"> dropbox
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="facebook"></div>
+          <input class="checkbox" data-size="221" type="checkbox" value="facebook"> facebook
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="facebook-alt"></div>
+          <input class="checkbox" data-size="348" type="checkbox" value="facebook-alt"> facebook-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="firefox"></div>
+          <input class="checkbox" data-size="2102" type="checkbox" value="firefox"> firefox
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="flickr"></div>
+          <input class="checkbox" data-size="430" type="checkbox" value="flickr"> flickr
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="flickr-alt"></div>
+          <input class="checkbox" data-size="450" type="checkbox" value="flickr-alt"> flickr-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="google-plus"></div>
+          <input class="checkbox" data-size="1120" type="checkbox" value="google-plus"> google-plus
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="google-plus-alt"></div>
+          <input class="checkbox" data-size="869" type="checkbox" value="google-plus-alt"> google-plus-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="ie"></div>
+          <input class="checkbox" data-size="963" type="checkbox" value="ie"> ie
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="ios"></div>
+          <input class="checkbox" data-size="911" type="checkbox" value="ios"> ios
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="jquery"></div>
+          <input class="checkbox" data-size="443" type="checkbox" value="jquery"> jquery
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="linkedin"></div>
+          <input class="checkbox" data-size="435" type="checkbox" value="linkedin"> linkedin
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="linkedin-alt"></div>
+          <input class="checkbox" data-size="525" type="checkbox" value="linkedin-alt"> linkedin-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="myspace"></div>
+          <input class="checkbox" data-size="648" type="checkbox" value="myspace"> myspace
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="paypal"></div>
+          <input class="checkbox" data-size="625" type="checkbox" value="paypal"> paypal
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="pinterest"></div>
+          <input class="checkbox" data-size="538" type="checkbox" value="pinterest"> pinterest
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="pinterest-alt"></div>
+          <input class="checkbox" data-size="640" type="checkbox" value="pinterest-alt"> pinterest-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="raphael"></div>
+          <input class="checkbox" data-size="1359" type="checkbox" value="raphael"> raphael
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="rss"></div>
+          <input class="checkbox" data-size="408" type="checkbox" value="rss"> rss
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="safari"></div>
+          <input class="checkbox" data-size="2100" type="checkbox" value="safari"> safari
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="skype"></div>
+          <input class="checkbox" data-size="1213" type="checkbox" value="skype"> skype
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="stumbleupon"></div>
+          <input class="checkbox" data-size="634" type="checkbox" value="stumbleupon"> stumbleupon
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="stumbleupon-alt"></div>
+          <input class="checkbox" data-size="730" type="checkbox" value="stumbleupon-alt"> stumble<br>upon-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="twitter"></div>
+          <input class="checkbox" data-size="677" type="checkbox" value="twitter"> twitter
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="twitter-alt"></div>
+          <input class="checkbox" data-size="780" type="checkbox" value="twitter-alt"> twitter-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="windows"></div>
+          <input class="checkbox" data-size="731" type="checkbox" value="windows"> windows
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="windows8"></div>
+          <input class="checkbox" data-size="176" type="checkbox" value="windows8"> windows8
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="wordpress"></div>
+          <input class="checkbox" data-size="1426" type="checkbox" value="wordpress"> wordpress
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="wordpress-alt"></div>
+          <input class="checkbox" data-size="1401" type="checkbox" value="wordpress-alt"> wordpress-alt
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="youtube"></div>
+          <input class="checkbox" data-size="649" type="checkbox" value="youtube"> youtube
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="livicon"></div>
+          <input class="checkbox" data-size="2179" type="checkbox" value="livicon"> livicon
+          </label>
+        </div>
+      </div><!--end span12 Socials-->
+
+      <div class="span12">
+        <h3 class="page-header">Spinner Icons</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-one"></div>
+          <input class="checkbox" data-size="1289" type="checkbox" value="spinner-one"> spinner-one
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-two"></div>
+          <input class="checkbox" data-size="642" type="checkbox" value="spinner-two"> spinner-two
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-three"></div>
+          <input class="checkbox" data-size="724" type="checkbox" value="spinner-three"> spinner-three
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-four"></div>
+          <input class="checkbox" data-size="889" type="checkbox" value="spinner-four"> spinner-four
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-five"></div>
+          <input class="checkbox" data-size="1211" type="checkbox" value="spinner-five"> spinner-five
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-six"></div>
+          <input class="checkbox" data-size="1501" type="checkbox" value="spinner-six"> spinner-six
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-name="spinner-seven"></div>
+          <input class="checkbox" data-size="865" type="checkbox" value="spinner-seven"> spinner-seven
+          </label>
+        </div>
+      </div><!--end span12 Spinners-->
+
+      <div class="span12">
+        <h3 class="page-header">Morphs Icons</h3>
+      </div>
+      <div class="span12">
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-c-s"></div>
+          <input class="checkbox" data-size="832" type="checkbox" value="morph-c-s"> morph-c-s
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-c-o"></div>
+          <input class="checkbox" data-size="1010" type="checkbox" value="morph-c-o"> morph-c-o
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-s-c"></div>
+          <input class="checkbox" data-size="832" type="checkbox" value="morph-s-c"> morph-s-c
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-s-o"></div>
+          <input class="checkbox" data-size="633" type="checkbox" value="morph-s-o"> morph-s-o
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-o-c"></div>
+          <input class="checkbox" data-size="1010" type="checkbox" value="morph-o-c"> morph-o-c
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-o-s"></div>
+          <input class="checkbox" data-size="633" type="checkbox" value="morph-o-s"> morph-o-s
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-c-t-up"></div>
+          <input class="checkbox" data-size="910" type="checkbox" value="morph-c-t-up"> morph-c-t-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-s-t-up"></div>
+          <input class="checkbox" data-size="466" type="checkbox" value="morph-s-t-up"> morph-s-t-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-o-t-up"></div>
+          <input class="checkbox" data-size="711" type="checkbox" value="morph-o-t-up"> morph-o-t-up
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-up-c"></div>
+          <input class="checkbox" data-size="910" type="checkbox" value="morph-t-up-c"> morph-t-up-c
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-up-s"></div>
+          <input class="checkbox" data-size="466" type="checkbox" value="morph-t-up-s"> morph-t-up-s
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-up-o"></div>
+          <input class="checkbox" data-size="711" type="checkbox" value="morph-t-up-o"> morph-t-up-o
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-c-t-right"></div>
+          <input class="checkbox" data-size="924" type="checkbox" value="morph-c-t-right"> morph-c-t-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-s-t-right"></div>
+          <input class="checkbox" data-size="465" type="checkbox" value="morph-s-t-right"> morph-s-t-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-o-t-right"></div>
+          <input class="checkbox" data-size="714" type="checkbox" value="morph-o-t-right"> morph-o-t-right
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-right-c"></div>
+          <input class="checkbox" data-size="924" type="checkbox" value="morph-t-right-c"> morph-t-right-c
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-right-s"></div>
+          <input class="checkbox" data-size="465" type="checkbox" value="morph-t-right-s"> morph-t-right-s
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-right-o"></div>
+          <input class="checkbox" data-size="714" type="checkbox" value="morph-t-right-o"> morph-t-right-o
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-c-t-down"></div>
+          <input class="checkbox" data-size="919" type="checkbox" value="morph-c-t-down"> morph-c-t-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-s-t-down"></div>
+          <input class="checkbox" data-size="468" type="checkbox" value="morph-s-t-down"> morph-s-t-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-o-t-down"></div>
+          <input class="checkbox" data-size="707" type="checkbox" value="morph-o-t-down"> morph-o-t-down
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-down-c"></div>
+          <input class="checkbox" data-size="919" type="checkbox" value="morph-t-down-c"> morph-t-down-c
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-down-s"></div>
+          <input class="checkbox" data-size="468" type="checkbox" value="morph-t-down-s"> morph-t-down-s
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-down-o"></div>
+          <input class="checkbox" data-size="707" type="checkbox" value="morph-t-down-o"> morph-t-down-o
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-c-t-left"></div>
+          <input class="checkbox" data-size="920" type="checkbox" value="morph-c-t-left"> morph-c-t-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-s-t-left"></div>
+          <input class="checkbox" data-size="473" type="checkbox" value="morph-s-t-left"> morph-s-t-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-o-t-left"></div>
+          <input class="checkbox" data-size="710" type="checkbox" value="morph-o-t-left"> morph-o-t-left
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-left-c"></div>
+          <input class="checkbox" data-size="920" type="checkbox" value="morph-t-left-c"> morph-t-left-c
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-left-s"></div>
+          <input class="checkbox" data-size="473" type="checkbox" value="morph-t-left-s"> morph-t-left-s
+          </label>
+        </div>
+        <div class="icon text-center">
+          <label>
+          <div class="livicon" data-n="morph-t-left-o"></div>
+          <input class="checkbox" data-size="710" type="checkbox" value="morph-t-left-o"> morph-t-left-o
+          </label>
+        </div>
+      </div><!--end span12 Morphs-->
+    </form>
+  </div>
+  <br>
+  <div class="row">
+    <div class="span2">
+      <p><input type="button" class="btn btn-info checkbutton" value="check all"></p>
+    </div>
+    <div class="span3">
+      <div class="alert alert-info checkedsummary"></div>
+    </div>
+    <div class="span6">
+      <div class="alert alert-info sizesummary"></div>
+    </div>
+  </div>
+  
+  <h2 class="page-header">Step 2 - Set the default parameters</h2>
+  <div class="row">
+    <div class="span5">
+      <p>Default icons size (pixels):</p> 
+    </div>
+    <div class="span2">
+      <div class="input-append">
+        <input class="input-mini" type="text" maxlength="4" id="defsize" name="defsize" value="32">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Default icons color:</p> 
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="iconcolor" value="original"> original
+      </label>
+    </div>
+    <div class="span2">
+      <label class="radio">
+        <input type="radio" name="iconcolor" checked="checked"><input class="input-mini minicolors" type="text" maxlength="6" id="defcolor" name="defcolor">
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Change color on hover:</p> 
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="hoverchange" value="no" checked="checked"> false
+      </label>
+    </div>
+    <div class="span2">
+      <label class="radio">
+        <input type="radio" name="hoverchange"><input class="input-mini minicolors" type="text" maxlength="6" id="defhovercolor" name="defhovercolor">
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Are icons animated by default:</p> 
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="defanimated" value="true" checked="checked"> true
+      </label>
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="defanimated" value="false"> false
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Is animation looped by default:</p> 
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="deflooped" value="true"> true
+      </label>
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="deflooped" value="false" checked="checked"> false
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Default event type (hover or click):</p> 
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="defeventtype" value="hover" checked="checked"> hover
+      </label>
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="defeventtype" value="click"> click
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Bind an event handler to parent element with a LivIcon:</p> 
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="defonparent" value="true"> true
+      </label>
+    </div>
+    <div class="span1">
+      <label class="radio">
+        <input type="radio" name="defonparent" value="false" checked="checked"> false
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Default morph transition time (ms):</p> 
+    </div>
+    <div class="span2">
+      <div class="input-append">
+        <input class="input-mini" type="text" maxlength="4" id="morphtime" name="morphtime" value="200">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Default hover color transition time (ms):</p> 
+    </div>
+    <div class="span2">
+      <div class="input-append">
+        <input class="input-mini" type="text" maxlength="4" id="hovertime" name="hovertime" value="200">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Default active class name for icons:</p> 
+    </div>
+    <div class="span2">
+      <input class="input-medium" type="text" id="activeicon" name="activeicon" value="activeicon">
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Default active class name for icons' parents:</p> 
+    </div>
+    <div class="span2">
+      <input class="input-medium" type="text" id="activeparent" name="activeparent" value="active">
+    </div>
+  </div>
+  <div class="row">
+    <div class="span5">
+      <p>Color for active state of all icons:</p> 
+    </div>
+    <div class="span2">
+      <input class="input-mini minicolors" type="text" maxlength="6" id="defactivecolor" name="defactivecolor">
+    </div>
+  </div>
+
+  <h2 class="page-header">Step 3 - Get the code</h2>
+  <div class="row">
+    <div class="span3">
+      <a href="#resultinfo" id="result" class="btn btn-large btn-block  btn-primary" value="check all">Get the code!</a>
+    </div>
+    <div class="span7 pull-right">
+      <div class="alert alert-error" id="errinfo"><i class="livicon" data-n="warning-alt" data-s="24" data-c="#9d261d" data-op="1"></i><strong>Please select at least one icon!</strong></div>
+    </div>
+  </div>
+  <br> 
+  <div class="row">
+    <div class="span12">
+      <textarea id="resultcode" class="span12" rows="16"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div class="span12">
+      <div class="well" id="resultinfo">
+        <p class="lead"><i class="livicon" data-n="check" data-s="32" data-c="#333" data-a="0"></i>Done!</p>
+        <p>Now please select (Ctrl+A) the all code in the textarea above, copy it (Ctrl+C) to clipboard and paste to a new file. Give this file a desired name (for ex. "livicons.js") and upload it to your server. Please don't forget to reference to it in your html AFTER jQuery and Raphael.</p>
+        <p>Thank you and good luck!</p>
+      </div>
+    </div>
+  </div>
+
+</div><!--end.container-->
+
+<pre id="restcode">lDI=lDI.replace(/\"d\":/g,'"duration":').replace(/\"i\":/g,'"init":').replace(/\"f\":/g,'"frames":').replace(/\"fIE\":/g,'"framesIE":').replace(/\"o\":/g,'"opacity":').replace(/\"t\":/g,'"transform":').replace(/\"it\":/g,'"iteration":').replace(/\"sh\":/g,'"shapes":').replace(/\"a\":/g,'"attr":').replace(/\"p\":/g,'"path":').replace(/\"fl\":/g,'"fill":').replace(/\"e\":/g,'"easing":').replace(/\"s\":/g,'"stroke-width":0,"stroke":'),liviconsdata=JSON.parse(lDI),sB=Raphael.svg,vB=Raphael.vml;
+Raphael.fn.createLivicon=function(f,b,g,k,h,c,u,s,v,x,w,y,m){var e=[];g=clone(w);var d=g.shapes.length;s=s?s:g.iteration;var l=[],q=[],t=[],A="s"+y+","+y+",0,0";w=y=!1;if(b.match(/spinner/)){y=!0;var D=jQuery("#"+f),B=function(){if(D.is(":visible")){if(!z){for(var a=0;a< d;a++)e[a].animate(l[a].repeat(Infinity));z=!0}}else if(z){for(a=0;a< d;a++)e[a].stop();z=!1}}}b.match(/morph/)&&(w=!0);for(b=0;b< d;b++){var r=g.shapes[b].init,n;for(n in r)r[n].transform=A+r[n].transform}if(sB)for(b=0;b< d;b++)for(n in r=
+g.shapes[b].frames,r)"transform"in r[n]&&(r[n].transform=A+r[n].transform);else for(b=0;b< d;b++)for(n in r=g.shapes[b].framesIE?g.shapes[b].framesIE:g.shapes[b].frames,r)"transform"in r[n]&&(r[n].transform=A+r[n].transform);for(b=0;b< d;b++)n=g.shapes[b].init.attr,"original"!=k&&(n.fill=k),t.push(n.fill),e[b]=this.path(n.path).attr(n);sB?jQuery("#"+f+" > svg").attr("id","canvas-for-"+f):jQuery("#"+f).children(":first-child").attr("id","canvas-for-"+f);f=jQuery("#"+f);m=m?m:f;if(!0==c){if(w){for(b=
+0;b< d;b++)l.push(Raphael.animation(g.shapes[b].frames,mD)),q.push(g.shapes[b].init.attr);if(h){var C=clone(q);for(b=0;b< d;b++)C[b].fill=h}}else if(c=v?v:g.duration,!sB&&vB)for(b=0;b< d;b++)g.shapes[b].framesIE?l.push(Raphael.animation(g.shapes[b].framesIE,c)):l.push(Raphael.animation(g.shapes[b].frames,c)),q.push(g.shapes[b].init.attr);else for(b=0;b< d;b++)l.push(Raphael.animation(g.shapes[b].frames,c)),q.push(g.shapes[b].init.attr);if("click"==x)if(u&&!w)if(y){for(b=0;b<
+d;b++)e[b].stop().animate(l[b].repeat(Infinity));var z=!0;setInterval(B,500)}else if(h){m.hover(function(){for(var a=0;a< d;a++)e[a].animate({fill:h},hD)},function(){for(var a=0;a< d;a++)e[a].animate({fill:t[a]},hD)});var p=!0;m.click(function(){for(var a=0;a< d;a++)e[a].stop().animate(p?l[a].repeat(u):q[a],0);p=!p})}else p=!0,m.click(function(){for(var a=0;a< d;a++)e[a].stop().animate(p?l[a].repeat(u):q[a],0);p=!p});else w?h?(m.hover(function(){for(var a=0;a< d;a++)e[a].animate({fill:h},
+hD)},function(){for(var a=0;a< d;a++)e[a].animate({fill:t[a]},hD)}),p=!0,m.click(function(){for(var a=0;a< d;a++)e[a].stop().animate(p?l[a]:C[a],mD),p=!p})):(p=!0,m.click(function(){for(var a=0;a< d;a++)e[a].stop().animate(p?l[a]:q[a],mD),p=!p})):h?(m.hover(function(){for(var a=0;a< d;a++)e[a].animate({fill:h},hD)},function(){for(var a=0;a< d;a++)e[a].animate({fill:t[a]},hD)}),m.click(function(){for(var a=0;a< d;a++)e[a].stop().animate(l[a].repeat(s))})):
+m.click(function(){for(var a=0;a< d;a++)e[a].stop().animate(l[a].repeat(s))});else if(u&&!w)if(y){for(x=0;x< d;x++)e[x].stop().animate(l[x].repeat(Infinity));z=!0;setInterval(B,500)}else h?m.hover(function(){for(var a=0;a< d;a++)e[a].stop().animate({fill:h},hD).animate(l[a].repeat(u))},function(){for(var a=0;a< d;a++)e[a].stop().animate(q[a],0)}):m.hover(function(){for(var a=0;a< d;a++)e[a].stop().animate(l[a].repeat(u))},function(){for(var a=0;a< d;a++)e[a].stop().animate(q[a],0)});else w?m.hover(function(){if(h)for(var a=
+0;a< d;a++)e[a].stop().animate({fill:h},hD).animate(l[a]);else for(a=0;a< d;a++)e[a].stop().animate(l[a])},function(){for(var a=0;a< d;a++)e[a].stop().animate(q[a],mD)}):m.hover(function(){if(h)for(var a=0;a< d;a++)e[a].stop().animate(q[a],0).animate({fill:h},hD).animate(l[a].repeat(s));else for(a=0;a< d;a++)e[a].stop().animate(q[a],0).animate(l[a].repeat(s))},function(){for(var a=0;a< d;a++)e[a].animate({fill:t[a]},hD)})}else h&&m.hover(function(){for(var a=
+0;a< d;a++)e[a].stop().animate({fill:h},hD)},function(){for(var a=0;a< d;a++)e[a].stop().animate({fill:t[a]},hD)});return!0};
+(function(f){function b(){return b.counter++}b.counter=1;f.fn.extend({addLivicon:function(g){return this.each(function(){var k=f(this);if(!k.attr("id")){var h=b();k.attr("id","livicon-"+h)}var c=k.data();c.liviconRendered&&k.removeLivicon();c=fullNames(c);g&&(g=fullNames(g));var c=f.extend(c,g),h=k.attr("id"),u=k.parent(),s=c.name?c.name:dN,v=c.size?c.size:dS,x=c.eventtype?c.eventtype:dET,w=v/32;k[0].style.height?k.css("width",v):k.css({width:v,height:v});var y=s in liviconsdata?
+liviconsdata[s]:liviconsdata[dN],m=k.hasClass(aC)||u.hasClass(aPC)?dAC:"original"==c.color?"original":c.color?c.color:dC,e=dA?!1==c.animate?c.animate:dA:!0==c.animate?c.animate:dA,d=dL?!1==c.loop?!1:Infinity:!0==c.loop?Infinity:!1,l=c.iteration?0< Math.round(c.iteration)?Math.round(c.iteration):!1:!1,q=c.duration?0< Math.round(c.duration)?Math.round(c.duration):!1:!1,t=dCCOH?dHC:!1;!1===c.hovercolor||
+0===c.hovercolor?t=!1:!0===c.hovercolor||1===c.hovercolor?t=dHC:c.hovercolor&&(t=c.hovercolor);c=dOP?!1==c.onparent?!1:u:!0==c.onparent?u:!1;Raphael(h,v,v).createLivicon(h,s,v,m,t,e,d,l,q,x,y,w,c);k.data("liviconRendered",!0);return this})},removeLivicon:function(b){return this.each(function(){var k=f(this);k.data("liviconRendered",!1);if("total"===b)k.remove();else{var h=k.attr("id");f("#canvas-for-"+h).remove();return k}})},updateLivicon:function(b){return this.each(function(){var k=
+f(this);k.removeLivicon().addLivicon(b);return k})}});f(".livicon").addLivicon()})(jQuery);function fullNames(f){f=JSON.stringify(f);f=f.replace(/\"n\":/g,'"name":').replace(/\"s\":/g,'"size":').replace(/\"c\":/g,'"color":').replace(/\"hc\":/g,'"hovercolor":').replace(/\"a\":/g,'"animate":').replace(/\"i\":/g,'"iteration":').replace(/\"d\":/g,'"duration":').replace(/\"l\":/g,'"loop":').replace(/\"et\":/g,'"eventtype":').replace(/\"op\":/g,'"onparent":');return f=JSON.parse(f)}
+function clone(f){if(null==f||"object"!=typeof f)return f;var b=new f.constructor,g;for(g in f)b[g]=clone(f[g]);return b};});</pre>
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/raphael-min.js"></script>
+  <script src="js/livicons-customizer-1.4.js"></script>
+  <script src="js/jquery.inputCtl.min.js"></script>  
+  <script src="js/jquery.minicolors.min.js"></script>
+  <script src="js/customizer.js"></script>
+  
+</body>
+</html>
